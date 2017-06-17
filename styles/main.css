@@ -1,0 +1,39 @@
+#calculator * {
+    font-size:  24px;
+}
+#calculator table {
+    border: solid 3px silver; 
+    border-spacing: 3px; 
+    border-radius: 5px;
+    background-color: #eee; 
+    margin: 0 auto;
+    padding: 8px;
+}
+#input-field input{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    background: #fff;
+}
+#input-field input:focus{
+    outline: none;
+}
+#calculator table td:not(:first-child) {
+    border-spacing: 9px;
+    padding: 0 9px 9px 9px;
+}
+input.display {
+    width: 166px; 
+    text-align: right;
+}
+#first td.buttons{
+    border-top: solid 1px silver;
+    padding-top: 10px;
+}	
+input[type=button] {
+    width: 60px;
+    height: 50px;
+}
