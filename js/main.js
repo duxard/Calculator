@@ -7,9 +7,11 @@ window.onload = function(){
     
     document.onkeypress = function(e){
         e = e || window.event;
+        // C клавиатуры возможен ввод только цифр и символов +-*/()
         if(!e.key.match(/[0-9\(\)\+\-\*\/]/)){
             return false;
         }
+        // Если уже была произведена какая-либо операция - очистить дисплей калькулятора
         if(processed){
             input.value = '';
             processed = false;
@@ -19,6 +21,11 @@ window.onload = function(){
     
     document.onkeydown = function(e) {
         e = e || window.event;
+        /*
+           27 - Escape - очистить поле
+           13 - Enter  - вычислить выражение
+           8  - Backspace - убрать последний введенный символ
+        */
         if(e.keyCode == 27){
             input.value = '';
         }else if(e.keyCode == 13){
