@@ -33,7 +33,7 @@ const getRPN = arr => {
                     output.push(operator);
                     operator = stack.pop();
                 }
-                openBracket = false;;
+                openBracket = false;
                 break;
             // В случае +- идем по стеку и выталкиваем в выходную строку всё содержимое
             // пока есть операторы и пока не встретится открывающая скобка
